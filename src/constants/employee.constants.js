@@ -1,0 +1,6 @@
+export const employeeConstants = {
+  LIST: 'EMPLOYEE_GETALL',
+  ADD: 'EMPLOYEE_ADD',
+  UPDATE: 'EMPLOYEE_UPDATE',
+  DEACTIVATE: 'EMPLOYEE_DEACTIVATE'
+}
