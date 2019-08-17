@@ -3,8 +3,7 @@ const path = require('path');
 const fetch = require('node-fetch');
 const axios = require('axios');
 const bodyParser = require('body-parser');
-const clientID= 'bd29131b5dddb07d4258'
-const clientSecret = '60161b4ceaa86cb6784035f6bafed1ca2ef19711';
+
 
 const app = express()
 app.use(bodyParser.json());
