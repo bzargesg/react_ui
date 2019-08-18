@@ -5,9 +5,13 @@ A React.js project for simple employee management
 ## Example
 [Simplifi Youtube](https://youtu.be/I_pccWnUV9c)\
 \
-![Application Login]()\
-![Application Use 1]()\
-![Application Use 2]()
+![Landing Page](https://media.giphy.com/media/kEE1onPL1Y13Fjn4jb/giphy.gif)\
+![Application Login](https://media.giphy.com/media/VFBeTfaTyo5ENBYiNg/giphy.gif)\
+![Application Tour](https://giphy.com/gifs/XgYoZVPffxqc2QWF1C)\
+![Pagination](https://media.giphy.com/media/chJhccrOaKlCbAbabF/giphy.gif)\
+![Activate/Deactivate Employee](https://giphy.com/gifs/M8RBHrle0msfSKxNMz)\
+![Edit Employee](https://media.giphy.com/media/h6fBPuYzItQOFIkhPN/giphy.gif)\
+![Add Employee](https://media.giphy.com/media/icU7DNlMduyReGSgTh/giphy.gif)
 
 ## Getting Started
 
@@ -20,6 +24,8 @@ A React.js project for simple employee management
 ## Running the application
 
 ***Requires a github login in order to log into the service
+must add the application at https://github.com/settings/applications/1117286
+then in the server file add both a clientID and client Secret
 #### Login
 1. Log in through github then you should land on the use page.
 #### Navigation  
