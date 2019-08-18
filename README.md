@@ -7,9 +7,9 @@ A React.js project for simple employee management
 \
 ![Landing Page](https://media.giphy.com/media/kEE1onPL1Y13Fjn4jb/giphy.gif)\
 ![Application Login](https://media.giphy.com/media/VFBeTfaTyo5ENBYiNg/giphy.gif)\
-![Application Tour](https://giphy.com/gifs/XgYoZVPffxqc2QWF1C)\
+![Application Tour](https://media.giphy.com/media/XgYoZVPffxqc2QWF1C/giphy.gif)\
 ![Pagination](https://media.giphy.com/media/chJhccrOaKlCbAbabF/giphy.gif)\
-![Activate/Deactivate Employee](https://giphy.com/gifs/M8RBHrle0msfSKxNMz)\
+![Activate/Deactivate Employee](https://media.giphy.com/media/M8RBHrle0msfSKxNMz/giphy.gif)\
 ![Edit Employee](https://media.giphy.com/media/h6fBPuYzItQOFIkhPN/giphy.gif)\
 ![Add Employee](https://media.giphy.com/media/icU7DNlMduyReGSgTh/giphy.gif)
 
