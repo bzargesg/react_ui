@@ -19,7 +19,10 @@
       e.preventDefault();
       this.props.add(this.state.Employee)
     }
-
+    /**
+   * Bound to onChange of input
+   * @param {Event} e
+   */
   changeHandler(e){
     if(e.target.name ==='first'){
       this.setState({Employee: {...this.state.Employee, FirstName: e.target.value}})

@@ -1,10 +1,10 @@
 import React from 'react';
-import store from '../helpers/store';
-import WelcomeContainer from '../components/containers/WelcomeContainer'
-import LoginContainer from '../components/containers/LoginContainer'
-import team from './images/team.svg'
+import store from './helpers/store';
+import WelcomeContainer from './components/containers/WelcomeContainer'
+import LoginContainer from './components/containers/LoginContainer'
+import team from '../assets/images/team.svg'
 import { Provider } from 'react-redux';
-import './App.css';
+import '../assets/css/App.css';
 
 function App(props) {
   

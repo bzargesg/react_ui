@@ -1,8 +1,8 @@
 import React from 'react';
 import Employee from './Employee'
 import AddEmployeeContainer from './containers/AddEmployeeContainer'
-import employeesIcon from '../App/images/employees.svg'
-import employeeIcon from '../App/images/employee.svg'
+import employeesIcon from '../../assets/images/employees.svg'
+import employeeIcon from '../../assets/images/employee.svg'
 class Welcome extends React.Component{
   constructor (props){
     super(props);

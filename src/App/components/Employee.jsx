@@ -56,6 +56,10 @@ class Employee extends React.Component{
     </form>
     )
   }
+  /**
+   * Bound to onChange of input
+   * @param {Event} e
+   */
   changeEmployeeField(e){
     if(e.target.name ==='first'){
       this.setState({Employee: {...this.state.Employee, FirstName: e.target.value}})
