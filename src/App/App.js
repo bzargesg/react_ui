@@ -17,13 +17,13 @@ function App(props) {
 						<h1>Simplifi</h1>
 				</header>
         {/* Nav Bar */}
-        			<nav id="nav">
+        	{localStorage.token ? (<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Introduction</a></li>
 							<li><a href="#list">Employees</a></li>
 							<li><a href="#add">Add New Employees</a></li>
 						</ul>
-					</nav>
+					</nav>) : <div></div>}
       <div id="main" className="App">
         {/* loginCheck bring welcome page or login*/}
       {localStorage.token ?  <WelcomeContainer /> : <LoginContainer />}
