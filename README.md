@@ -3,15 +3,14 @@
 A React.js project for simple employee management
 
 ## Example
-[Simplifi Youtube](https://youtu.be/I_pccWnUV9c)\
+[Simplifi Youtube](https://youtu.be/mpmFc0ga-HU)\
 \
 ![Landing Page](https://media.giphy.com/media/kEE1onPL1Y13Fjn4jb/giphy.gif)\
 ![Application Login](https://media.giphy.com/media/VFBeTfaTyo5ENBYiNg/giphy.gif)\
-![Application Tour](https://media.giphy.com/media/XgYoZVPffxqc2QWF1C/giphy.gif)\
-![Pagination](https://media.giphy.com/media/chJhccrOaKlCbAbabF/giphy.gif)\
-![Activate/Deactivate Employee](https://media.giphy.com/media/M8RBHrle0msfSKxNMz/giphy.gif)\
-![Edit Employee](https://media.giphy.com/media/h6fBPuYzItQOFIkhPN/giphy.gif)\
-![Add Employee](https://media.giphy.com/media/icU7DNlMduyReGSgTh/giphy.gif)
+![Application Tour](https://media.giphy.com/media/fvNXw88iaZDHAEb45E/giphy.gif)\
+![Pagination]()\
+![Edit Employee](https://media.giphy.com/media/cjcNA3yYLbrxhNbQu4/giphy.gif)\
+![Add Employee](https://media.giphy.com/media/gjaQFHPiNG07uVzkmU/200w_d.gif)
 
 ## Getting Started
 
