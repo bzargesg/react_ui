@@ -24,36 +24,37 @@ class Employee extends React.Component{
   }
   showAll(){
     return !this.state.editEmployee ? (
-      <div>
-        <div>First: {this.props.employee.FirstName}</div>
-        <div>Last: {this.props.employee.LastName}</div>
-        <div>DOB: {this.props.employee.DateOfBirth}</div>
-        <div>DOE: {this.props.employee.DateOfEmployment}</div>
-        <div>MI: {this.props.employee.MiddleInitial}</div>
-        <div 
+      <tr>
+        <td>{this.props.employee.FirstName}</td>
+        <td>{this.props.employee.LastName}</td>
+        <td>{this.props.employee.DateOfBirth}</td>
+        <td>{this.props.employee.DateOfEmployment}</td>
+        <td>{this.props.employee.MiddleInitial}</td>
+        <td 
         style={{'color': this.props.employee.Status ==='Active' ? 'green' : 'red'}}
         onClick={()=>{
           this.props.deactivate(this.props.employee.id)
-        }}>Status: {this.props.employee.Status}</div>
-        <button onClick={this.editEmployee}>Edit Employee</button>
-      </div>
+        }}>Status: {this.props.employee.Status}</td>
+        <td>
+        <button onClick={this.editEmployee}>Edit Employee</button></td>
+        </tr>
     ) : this.showEditEmployee();
   }
   showEditEmployee(){
     return(
-      <form onSubmit={this.editEmployeeSubmit}>
-      <div>First: <input type="text" name="first" onChange={this.changeEmployeeField} placeholder={this.props.employee.FirstName}></input></div>
-      <div>Last: <input type="text" name="last" onChange={this.changeEmployeeField} placeholder={this.props.employee.LastName}></input></div>
-      <div>DOB: <input type="text" name="DOB" onChange={this.changeEmployeeField} placeholder={this.props.employee.DateOfBirth}></input></div>
-      <div>DOE: <input type="text" name="DOE" onChange={this.changeEmployeeField} placeholder={this.props.employee.DateOfEmployment}></input></div>
-      <div>MI: <input type="text" name="middle" onChange={this.changeEmployeeField} placeholder={this.props.employee.MiddleInitial}></input></div>
-      <div 
+      <tr>
+      <td><input type="text" name="first" onChange={this.changeEmployeeField} placeholder={this.props.employee.FirstName}></input></td>
+      <td><input type="text" name="last" onChange={this.changeEmployeeField} placeholder={this.props.employee.LastName}></input></td>
+      <td><input type="text" name="DOB" onChange={this.changeEmployeeField} placeholder={this.props.employee.DateOfBirth}></input></td>
+      <td><input type="text" name="DOE" onChange={this.changeEmployeeField} placeholder={this.props.employee.DateOfEmployment}></input></td>
+      <td><input type="text" name="middle" onChange={this.changeEmployeeField} placeholder={this.props.employee.MiddleInitial}></input></td>
+      <td 
       style={{'color': this.props.employee.Status ==='Active' ? 'green' : 'red'}}
       onClick={()=>{
         this.props.deactivate(this.props.employee.id)
-      }}>Status: {this.props.employee.Status}</div>
-      <button >Done</button>
-    </form>
+      }}>Status: {this.props.employee.Status}</td>
+      <td><button onClick={this.editEmployeeSubmit}>Done</button></td>
+    </tr>
     )
   }
   /**
@@ -82,24 +83,12 @@ class Employee extends React.Component{
     this.props.update(this.state.Employee)
     this.setState({editEmployee: !this.state.editEmployee})
   }
-  showLess(){
-    return(
-      <div>
-        <div>First: {this.props.employee.FirstName}</div>
-        <div>Last: {this.props.employee.LastName}</div>
-      </div>
-    )
-  }
+
   showHandler(e){
     this.setState({showMore: !this.state.showMore})
   }
   render(){
-  return(
-    <div>
-      {this.state.showMore ? this.showAll() : this.showLess()}
-      <button onClick={this.showHandler}>{!this.state.showMore ? 'Show More' : 'Show Less'}</button>
-    </div>
-  )
+  return this.showAll()
 }
 }
 export default Employee;

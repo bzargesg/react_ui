@@ -18,6 +18,7 @@
     submitHandler(e){
       e.preventDefault();
       this.props.add(this.state.Employee)
+      this.props.addEmployee();
     }
     /**
    * Bound to onChange of input
@@ -43,19 +44,18 @@
   
   render (){
     return(
-      <form className="addEmployeeForm" onSubmit={this.submitHandler}>
-        Add Employee:
-        <input type="text" name="first" placeholder="first name" onChange={this.changeHandler}></input>
-        <input type="text" name="last" placeholder="last name" onChange={this.changeHandler}></input>
-        <input type="text" name="middle" placeholder="MI" onChange={this.changeHandler}></input>
-        <input type="text" name="DOB" placeholder="DOB" onChange={this.changeHandler}></input>
-        <input type="text" name="DOE" placeholder="DOE" onChange={this.changeHandler}></input>
-        <div name="Active" onClick={this.activeHandler}
+      <tr>
+        <td><input type="text" name="first" placeholder="first name" onChange={this.changeHandler}></input></td>
+        <td><input type="text" name="last" placeholder="last name" onChange={this.changeHandler}></input></td>
+        <td><input type="text" name="middle" placeholder="MI" onChange={this.changeHandler}></input></td>
+        <td><input type="text" name="DOB" placeholder="DOB" onChange={this.changeHandler}></input></td>
+        <td><input type="text" name="DOE" placeholder="DOE" onChange={this.changeHandler}></input></td>
+        <td><div name="Active" onClick={this.activeHandler}
          style={this.state.Employee.Status==='Active' ? {"color": "green"} : {}}>Active</div>
         <div name="Active" onClick={this.activeHandler}
-         style={this.state.Employee.Status==='Inactive' ? {"color": "red"} : {}}>Inactive</div>
-        <input type="submit"></input>
-      </form>
+         style={this.state.Employee.Status==='Inactive' ? {"color": "red"} : {}}>Inactive</div></td>
+        <td><button onClick={this.submitHandler}>Done</button></td>
+      </tr>
     )
   }
 }

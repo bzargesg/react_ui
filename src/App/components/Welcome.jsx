@@ -51,22 +51,42 @@ class Welcome extends React.Component{
       </header>
       <div>Click on status to set to inactive or active</div>
       <footer className="major">
-        <ul className="employee-list">
+        <table>
+          <thead>
+            <tr>
+              <th>First</th>
+              <th>Last</th>
+              <th>DOB</th>
+              <th>DOE</th>
+              <th>MI</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+        
           {Object.keys(this.props.employee).map((employeeId, index)=>{
             if(index >= this.state.employeePagination && index < this.state.employeePagination + 10){
               return(
-              <li>
                 <Employee employee={this.props.employee[employeeId]} deactivate={this.props.deactivate}
                   update={this.props.update} />
-              </li>)
+              )
             }
           })}
-          <br></br>
-          <div><button value="prev" onClick={this.pageChange}>prev</button><button value="next" onClick={this.pageChange}>next</button></div>
-        </ul>
+          </tbody>
+          <tfoot>
+            {this.state.addEmployee ?
+            <AddEmployeeContainer addEmployee={this.addEmployeeToggle}/> : ''}
+          </tfoot>
+        </table>
+        <div><button value="prev" onClick={this.pageChange}>prev</button><button value="next" onClick={this.pageChange}>next</button></div>
+        <button onClick={this.addEmployeeToggle}>{this.state.addEmployee ? 'Minimize' : 'Add Employee'}</button>
       </footer>
     </section>
-    <section id="add" className="main special">
+  </div>)
+  }
+}
+/* Employees
+<section id="add" className="main special">
       <header className="major">
         <span><img className='iconEmployees' src={employeeIcon} alt="Employee Icon" /></span><h2>Add New Employee</h2>
       </header>
@@ -82,7 +102,5 @@ class Welcome extends React.Component{
       </footer>
       <br></br>
     </section>
-  </div>)
-}
-}
+*/
 export default Welcome;
