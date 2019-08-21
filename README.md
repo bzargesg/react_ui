@@ -24,7 +24,11 @@ A React.js project for simple employee management
 ## Running the application
 
 ***Requires a github login in order to log into the service
-must add the application at https://github.com/settings/applications/1117286
+must add the application at https://github.com/settings/applications/
+1. Go to the Developer settings on the sidebar
+2. Go To Oauth Apps on the sidebar
+3. Add the application name
+4. For the homepage and callback url add http://localhost:8000/
 then in the server file add both a clientID and client Secret
 #### Login
 1. Log in through github then you should land on the use page.
