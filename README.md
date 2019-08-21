@@ -30,6 +30,7 @@ must add the application at https://github.com/settings/applications/
 3. Add the application name
 4. For the homepage and callback url add http://localhost:8000/
 then in the server file add both a clientID and client Secret
+5. Then set a variable in server.js for clientID and clientSecret as provided.
 #### Login
 1. Log in through github then you should land on the use page.
 #### Navigation  
